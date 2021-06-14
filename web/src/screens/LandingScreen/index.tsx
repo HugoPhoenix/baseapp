@@ -97,22 +97,6 @@ class Landing extends React.Component<Props> {
                             <MarketsTable />
                         </div>
                     </div>
-                    <div className="pg-landing-screen__platform-info">
-                        <div className="pg-landing-screen__platform-info__wrap">
-                            <div className="pg-landing-screen__platform-info__wrap__item">
-                                <span>{this.translate('page.body.landing.platformInfo.item.first.value')}</span>
-                                <span>{this.translate('page.body.landing.platformInfo.item.first.title')}</span>
-                            </div>
-                            <div className="pg-landing-screen__platform-info__wrap__item">
-                                <span>{this.translate('page.body.landing.platformInfo.item.second.value')}</span>
-                                <span>{this.translate('page.body.landing.platformInfo.item.second.title')}</span>
-                            </div>
-                            <div className="pg-landing-screen__platform-info__wrap__item">
-                                <span>{this.translate('page.body.landing.platformInfo.item.third.value')}</span>
-                                <span>{this.translate('page.body.landing.platformInfo.item.third.title')}</span>
-                            </div>
-                        </div>
-                    </div>
                 </LandingBlock>
                 <LandingBlock
                     className="pg-landing-screen__register"
@@ -224,33 +208,15 @@ class Landing extends React.Component<Props> {
                             <div className="pg-landing-screen__footer__wrap__navigation__col">
                                 <Link to="/trading/">{this.translate('page.body.landing.footer.exchange')}</Link>
                                 <Link to="/wallets">{this.translate('page.body.landing.footer.wallets')}</Link>
-                                <Link to="/">{this.translate('page.body.landing.footer.fees')}</Link>
+                                <Link to="/fees">{this.translate('page.body.landing.footer.fees')}</Link>
                             </div>
                             <div className="pg-landing-screen__footer__wrap__navigation__col">
-                                <Link to="/">{this.translate('page.body.landing.footer.faq')}</Link>
-                                <Link to="/">{this.translate('page.body.landing.footer.support')}</Link>
-                                <Link to="/">{this.translate('page.body.landing.footer.privacy')}</Link>
-                            </div>
-                            <div className="pg-landing-screen__footer__wrap__navigation__col">
-                                <Link to="/">{this.translate('page.body.landing.footer.about')}</Link>
-                                <Link to="/">{this.translate('page.body.landing.footer.community')}</Link>
-                                <Link to="/">{this.translate('page.body.landing.footer.info')}</Link>
+                                <Link to="https://discord.gg/6adhZtWTNw">{this.translate('page.body.landing.footer.support')}</Link>
+                                <Link to="/privacy">{this.translate('page.body.landing.footer.privacy')}</Link>
+                                <Link to="/about">{this.translate('page.body.landing.footer.about')}</Link>
                             </div>
                         </div>
-                        <div className="pg-landing-screen__footer__wrap__social">
-                            <div className="pg-landing-screen__footer__wrap__social__row">
-                                <img src={TelegramIcon} alt="Telegram" />
-                                <img src={LinkedInIcon} alt="LinkedIn" />
-                                <img src={TwitterIcon} alt="Twitter" />
-                                <img src={YouTubeIcon} alt="YouTube" />
-                            </div>
-                            <div className="pg-landing-screen__footer__wrap__social__row">
-                                <img src={RedditIcon} alt="Reddit" />
-                                <img src={FacebookIcon} alt="Facebook" />
-                                <img src={MediumIcon} alt="MediumIcon" />
-                                <img src={CoinMarketIcon} alt="CoinMarket" />
-                            </div>
-                        </div>
+
                     </div>
                     <span className="pg-landing-screen__footer__rights">
                         {this.translate('page.body.landing.footer.rights')}
